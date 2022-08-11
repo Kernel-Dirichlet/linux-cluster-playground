@@ -40,7 +40,7 @@ And now, for a step-by-step guide
 
 4) <code> python3 make_cluster.py </code> - runs the python script which auto-generates the Docker compose YAML file. 
 
-5) <code> docker compose --file user_config.yml up -d </code> - This spins up the cluster. Sit back and watch the magic. Note: you may need to put "sudo" before this command. 
+5) <code> bash local-config.sh </code> - This spins up the cluster. Sit back and watch the magic. Bash script sets up entirely cluster.
 
 6) Now, you can just shell your way into any of the containers. Because we spin the containers up with Docker Compose, the containers always have a lovely
 consistent naming format - <code> linux_cluster-*(distro)*-container-*(index)* </code>. Below is the full command for each of the distros
