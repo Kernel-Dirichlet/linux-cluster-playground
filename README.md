@@ -33,7 +33,7 @@ There is a JSON-based configuration file, which allows users to switch which ver
 And now, for a step-by-step guide
 1) <code> git clone https://github.com/Kernel-Dirichlet/linux-playground.git </code> - clone this repository 
 
-2) <code> cd linux-playground </code> - navigate into the directory 
+2) <code> cd linux-playground/linux_cluster </code> - navigate into the directory 
 
 3) <code> vim default-config.json </code> OR
    <code> nano default-config.json </code> - open the default-config.json file. Here, you can simply change the number of containers you want for each distro       and the specific version. 
