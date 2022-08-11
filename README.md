@@ -1,6 +1,8 @@
 # linux-playground
 A place for users to learn and experiment with Linux distros
 
+!![Alt text](/linux_cluster/repo_logo.png?raw=true "Title")
+
 # OVERVIEW
 
 This repo provides users a "sandbox" to explore various Linux distros in any version supported by Docker. This is especially useful for 
