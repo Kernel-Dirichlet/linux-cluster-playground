@@ -1,0 +1,125 @@
+version: "3.7"
+services:
+  alpine-container:
+    image: alpine:edge
+    tty: true
+    stdin_open: true
+    restart: on-failure
+    volumes:
+      - ./alpine_scripts:/shell_scripts/
+    networks:
+      - linux_swarm
+    deploy:
+      replicas: 1
+
+  archlinux-container:
+    image: archlinux:latest
+    tty: true
+    stdin_open: true
+    restart: on-failure
+    volumes:
+      - ./arch_linux_scripts:/shell_scripts/
+    networks:
+      - linux_swarm
+    deploy:
+      replicas: 1
+
+  centos-container:
+    image: centos:7
+    tty: true
+    stdin_open: true
+    restart: on-failure
+    volumes:
+      - ./centos_scripts:/shell_scripts/
+    networks:
+      - linux_swarm
+    deploy:
+      replicas: 1
+
+  clearlinux-container:
+    image: clearlinux:latest
+    tty: true
+    stdin_open: true
+    restart: on-failure
+    volumes:
+      - ./clear_linux_scripts:/shell_scripts/
+    networks:
+      - linux_swarm
+    deploy:
+      replicas: 1
+
+  debian-container:
+    image: debian:latest
+    tty: true
+    stdin_open: true
+    restart: on-failure
+    volumes:
+      - ./debian_scripts:/shell_scripts/
+    networks:
+      - linux_swarm
+    deploy:
+      replicas: 1
+
+  fedora-container:
+    image: fedora:latest
+    tty: true
+    stdin_open: true
+    restart: on-failure
+    volumes:
+      - ./fedora_scripts:/shell_scripts/
+    networks:
+      - linux_swarm
+    deploy:
+      replicas: 1
+
+  oracle-container:
+    image: oraclelinux:9
+    tty: true
+    stdin_open: true
+    restart: on-failure
+    volumes:
+      - ./oracle_linux_scripts:/shell_scripts/
+    networks:
+      - linux_swarm
+    deploy:
+      replicas: 1
+
+  rockylinux-container:
+    image: rockylinux:9.0
+    tty: true
+    stdin_open: true
+    restart: on-failure
+    volumes:
+      - ./rocky_linux_scripts:/shell_scripts/
+    networks:
+      - linux_swarm
+    deploy:
+      replicas: 1
+
+  suse-container:
+    image: opensuse/leap
+    tty: true
+    stdin_open: true
+    restart: on-failure
+    volumes:
+      - ./suse_linux_scripts:/shell_scripts/
+    networks:
+      - linux_swarm
+    deploy:
+      replicas: 1
+
+  ubuntu-container:
+    image: ubuntu:latest
+    tty: true
+    stdin_open: true
+    restart: on-failure
+    volumes:
+      - ./ubuntu_scripts:/shell_scripts/
+    networks:
+      - linux_swarm
+    deploy:
+      replicas: 1
+
+networks:
+  linux_swarm:
+    external: true

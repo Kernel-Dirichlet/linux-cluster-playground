@@ -1,0 +1,64 @@
+{
+    "Alpine":
+    {
+        "containers": 1,
+        "version": "edge"
+
+    },
+
+    "ArchLinux": 
+    {
+        "containers": 1,
+        "version": "latest"
+    },
+
+    "CentOS":
+    {
+        "containers": 1, 
+        "version": "7"
+    },
+    
+    "ClearLinux":
+    {
+     
+     "containers": 1,
+     "version": "latest" 
+    },
+
+    "Debian": 
+    {
+        "containers": 1,
+        "version": "latest"
+    },
+
+    "Fedora": 
+    {
+        "containers": 1,
+        "version": "latest"
+    },
+
+    "OracleLinux":
+    {
+        "containers": 1,
+        "version": 9
+    },
+
+    "RockyLinux": 
+    {
+        "containers": 1,
+        "version": 9.0
+    },
+    
+    "SUSELinux":
+    {
+        "containers": 1,
+        "version": "leap"
+    },
+
+    "Ubuntu":
+    {
+        "containers": 1,
+        "version": "latest"
+    }
+
+}
