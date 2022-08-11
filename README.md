@@ -1,7 +1,7 @@
 # linux-playground
 A place for users to learn and experiment with Linux distros
 
-!![Alt text](/linux_cluster/repo_logo.png?raw=true "Title")
+![Alt text](/linux_cluster/repo_logo.png?raw=true "Title")
 
 # OVERVIEW
 
