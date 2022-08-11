@@ -31,9 +31,9 @@ This repo assumes Python is installed (obviously 3+) and Docker. Code was writte
 There is a JSON-based configuration file, which allows users to switch which version of the Linux distro they want (make sure it matches a tag supported on Docker Hub EXACTLY) and the number of containers (which run a VM of that particular distro + version). Then, a Python file auto-generates a Docker compose YAML file which is used to spin up the containers. Default is one container for each of the supported distros (ten as of 8/10/2022)
 
 And now, for a step-by-step guide
-1) <code> git clone https://github.com/Kernel-Dirichlet/linux-playground </code> - clone this repository 
+1) <code> git clone https://github.com/Kernel-Dirichlet/linux-cluster-playground.git </code> - clone this repository 
 
-2) <code> cd linux-playground </code> - navigate into the directory 
+2) <code> cd linux-cluster-playground/linux_cluster </code> - navigate into the directory 
 
 3) <code> vim default-config.json </code> OR
    <code> nano default-config.json </code> - open the default-config.json file. Here, you can simply change the number of containers you want for each distro       and the specific version. 
